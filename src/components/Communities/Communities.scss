@@ -1,0 +1,56 @@
+@import "../../sass/variables.scss";
+
+.communities{
+    margin-top: 80px;
+    background-color: $color-white;
+    padding-top: 25px;
+    position: relative;
+
+    h2{
+        font-size: 18px;
+        font-family: 'NunitoSans-Bold';
+        margin: 0;
+    }
+
+    .react-multi-carousel-list{
+        margin: 0 -14px;
+        padding: 0 14px;
+    }
+
+    .community-card__arrows{
+        position: absolute;
+        top: -36px;
+        right: 0;
+
+        button{
+            border: none;
+            background-color: transparent;
+            font-family: 'NunitoSans-Bold';
+            font-size: 24px;
+            transform: scale(1);
+            transition: .3s ease;
+
+            &.disable{
+                opacity: .5;
+            }
+
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .communities{
+        .community-card__arrows{
+            right: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md){
+    .communities{
+        margin-top: 0;
+    }
+}

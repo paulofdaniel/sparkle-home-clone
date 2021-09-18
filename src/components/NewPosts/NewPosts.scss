@@ -1,0 +1,33 @@
+@import "../../sass/variables.scss";
+
+.new-posts{
+    margin-top: 50px;
+
+    h2{
+        font-size: 18px;
+        font-family: 'NunitoSans-Bold';
+        margin: 0;
+        position: relative;
+        padding-bottom: 6px;
+
+        &:before{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: $color-orange;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+        }
+    }
+
+    &__wrapper{
+        background-color: $color-gray-1;
+        padding: 25px 0;
+    }
+
+    &__masonry{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}

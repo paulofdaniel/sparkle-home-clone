@@ -1,0 +1,15 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+ 
+ //Colors
+ $color-white: #fff;
+ $color-gray-1: rgb(240, 243, 247);
+ $color-gray-2: #dfdfdf;
+ $color-gray-3: #bbb;
+ $color-gray-4: #333;
+ $color-orange: rgb(255, 128, 64);
+ $color-light-orange: rgb(255, 152, 99);
+ $color-orange-25: rgba(255, 128, 64, .25);
+ $color-black-25: rgba(0,0,0,.25);
+ $color-black-10: rgba(0,0,0,.1);
