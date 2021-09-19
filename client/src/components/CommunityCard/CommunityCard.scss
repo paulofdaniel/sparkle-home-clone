@@ -1,0 +1,155 @@
+@import "../../sass/variables.scss";
+
+.community-card{
+    
+    padding: 12px 14px 12px 0;
+
+    &__content{
+        padding: 6px 6px 25px 6px;
+        width: calc(100% - 14px);
+        border-radius: 6px;
+        box-shadow: 0 2px 6px $color-black-25;
+        cursor: pointer;
+        transform: scale(1);
+        transition: .3s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &__last-posts{
+        display: flex;
+
+        div{
+            width: calc((100% - 8px) / 3);
+            border-radius: 3px;
+            overflow: hidden;
+            padding-bottom: calc((100% - 8px) / 3);
+            position: relative;
+            background-color: $color-gray-1;
+
+            &:nth-of-type(2){
+                margin: 0 4px;
+            }
+        }
+
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__info{
+        width: 100%;
+        margin-top: -32px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        img{
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            border-radius: 20%;
+            box-shadow: 0 0 0 6px $color-white;
+            position: relative;
+            background-color: $color-gray-2;
+        }
+    }
+
+    &__name{
+        display: block;
+        font-family: 'NunitoSans-Bold';
+        font-size: 18px;
+        margin-top: 12px;
+        color: $color-gray-4;
+    }
+
+    &__description{
+        font-family: 'NunitoSans-Regular';
+        font-size: 12px;
+        margin-top: -2px;
+        color: $color-gray-4;
+    }
+
+    &__new-publications{
+        
+        font-family: 'NunitoSans-Regular';
+        font-size: 12px;
+        color: $color-gray-4;
+        margin: 12px 0 4px 0;
+        text-align: center;
+
+        strong{
+            display: block;
+            font-family: 'NunitoSans-Bold';
+            font-size: 18px;
+            margin-bottom: -4px;
+            color: $color-gray-4;
+        }
+    }
+}
+
+@include media-breakpoint-down(xl) { 
+    .community-card{
+        
+        padding: 0;
+        margin-top: 24px;
+
+        &__last-posts{
+            display: none;
+        }
+
+        &__content{
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        &__info{
+            margin-top: 0;
+    
+            img{
+                width: 84px;
+                height: 84px;
+                object-fit: cover;
+                border-radius: 20%;
+                box-shadow: 0 0 6px $color-black-25;
+            }
+        }
+
+        &__name{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        &__description{
+            display: none;
+        }
+
+        &__new-publications{
+            position: absolute;
+            min-height: 26px;
+            min-width: 26px;
+            padding: 0 4px;
+            background-color: $color-orange;
+            border-radius: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -8px;
+            right: calc(50% - 55px);
+            margin: 0;
+
+            strong{
+                font-size: 12px;
+                color: $color-white;
+                margin-top: -3px;
+            }
+            
+        }
+    }
+}
