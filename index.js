@@ -8,7 +8,7 @@ app.use(express.json());
 const USERS_PATH = "./json/users.json";
 const POSTS_PATH = "./json/posts.json";
 
-app.listen(5000, ()=>{
+app.listen(process.env.PORT || 5000, ()=>{
     console.log("API rodando.");
 });
 
