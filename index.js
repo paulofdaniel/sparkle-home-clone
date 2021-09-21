@@ -1,5 +1,7 @@
 import express from "express"
 import fs from "fs";
+import * as path from 'path'
+
 
 const app = express();
 app.use(express.json());
@@ -29,8 +31,6 @@ async function readJson(path){
     }
 };
 
-
-const path = require('path');
 if (process.env.NODE_ENV === 'production') {
     // Serve any static files
   app.use(express.static(path.join(__dirname, 'client/build')));
