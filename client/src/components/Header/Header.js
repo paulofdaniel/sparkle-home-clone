@@ -11,12 +11,12 @@ export default function Header() {
             <div className="container-lg">
                 <div className="row">
                     <nav className="col-12 header-nav">
-                        <a href="http://localhost:3000">
+                        <a href="/">
                             <h1><img className="header-nav__logo" src={logo} alt="Hotmart Sparkle"/></h1>
                         </a>
                         <ul className="header-nav__live-button">
                             <li>
-                                <a href="http://localhost:3000">
+                                <a href="/">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#FFFFFF" fillRule="evenodd" d="M19.059 18.998c.141 0 .332-.083.426-.186C21.11 17.07 22 14.85 22 12.5c0-2.35-.889-4.57-2.515-6.314C19.39 6.083 19.2 6 19.059 6c-.126 0-.301.068-.392.153l-.776.74c-.208.198-.232.52-.038.73 1.063 1.147 1.925 3.332 1.925 4.877s-.862 3.73-1.925 4.876c-.194.21-.17.533.038.731l.776.739c.09.084.266.152.392.152zM4.94 19c.126 0 .301-.068.392-.153l.776-.738c.208-.198.232-.52.038-.73-1.063-1.145-1.925-3.326-1.925-4.869v-.018c0-1.543.862-3.724 1.925-4.868.194-.21.17-.533-.038-.731l-.776-.739c-.09-.084-.266-.152-.392-.152-.141 0-.332.083-.426.186C2.89 7.93 2 10.15 2 12.5c0 2.35.889 4.57 2.515 6.314.094.103.285.186.426.186zM7.7 16.374c.126 0 .304-.07.395-.155l.79-.752c.09-.084.164-.25.164-.371 0-.098-.051-.24-.113-.317-.455-.551-.824-1.572-.824-2.279 0-.707.37-1.728.824-2.279.062-.077.112-.219.112-.317 0-.12-.073-.287-.163-.37l-.79-.753c-.091-.085-.269-.155-.395-.155-.148 0-.344.09-.438.2-.758.88-1.373 2.525-1.373 3.674s.615 2.795 1.373 3.674c.094.11.29.2.438.2zm8.601 0c.148 0 .344-.089.438-.199.758-.88 1.373-2.525 1.373-3.674s-.615-2.795-1.373-3.674c-.094-.11-.29-.2-.438-.2-.127 0-.304.07-.395.155l-.79.753c-.09.083-.164.25-.164.37 0 .098.051.24.113.317.455.551.824 1.572.824 2.279 0 .707-.37 1.728-.824 2.279-.062.077-.113.219-.113.317 0 .12.074.287.164.37l.79.753c.091.085.268.155.395.155zM12 14.397c1.073 0 1.944-.85 1.944-1.896 0-1.046-.87-1.896-1.944-1.896-1.073 0-1.944.85-1.944 1.896 0 1.046.87 1.896 1.944 1.896z"></path></svg>
                                     <span>Sparkle Live</span>
                                 </a>
@@ -24,17 +24,17 @@ export default function Header() {
                         </ul>
                         <ul className="header-nav__buttons">
                             <li className="order-3 order-md-1">
-                                <a href="http://localhost:3000" className="header-nav__publish-button">
+                                <a href="/" className="header-nav__publish-button">
                                     <span>+</span>
                                 </a>
                             </li>
                             <li className="order-1 order-md-2">
-                                <a href="http://localhost:3000" className="header-nav__generic-button header-nav__generic-button--active">
+                                <a href="/" className="header-nav__generic-button header-nav__generic-button--active">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none"><rect fill="white" fillOpacity="0.01"></rect><path d="M4 22.4595V13.4628C4 12.8222 4.25456 12.2079 4.70776 11.7548L11.5869 4.87835C12.7585 3.70722 14.6581 3.70722 15.8297 4.87835L22.7089 11.7548C23.1621 12.2078 23.4167 12.8222 23.4167 13.4628V22.4595C23.4167 23.7934 22.3349 24.875 21 24.875H6.41667C5.08179 24.875 4 23.7934 4 22.4595Z"></path></svg>
                                 </a>
                             </li>
                             <li className="order-2 order-md-3">
-                                <a href="http://localhost:3000" className="header-nav__generic-button">
+                                <a href="/" className="header-nav__generic-button">
                                     <svg viewBox="0 0 28 28" fill="none"><rect fill="white" fillOpacity="0.01"></rect><circle cx="13.2709" cy="13.2709" r="8.97917" stroke="#353A40"></circle><path d="M19.8333 19.8333L24.9374 24.9374" stroke="#353A40" strokeLinecap="round"></path></svg>
                                 </a>
                             </li>
@@ -53,13 +53,13 @@ export default function Header() {
                                             </span>
                                             <ul>
                                                 <li>
-                                                    <a href="http://localhost:3000">
+                                                    <a href="/">
                                                         <span>Baixar para iOS</span>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19"><path fill="#FF8040" fillRule="nonzero" d="M13.377 10.04c0 .081-.149 2.596 2.623 3.899-.519 1.56-2.295 5.03-4.361 5.06-1.195 0-1.896-.76-3.248-.76-1.394 0-2.15.735-3.222.76-2.049.064-4.013-3.754-4.557-5.31C.204 12.503 0 11.354 0 10.243c0-3.762 2.52-5.612 4.893-5.65 1.147 0 2.61.836 3.247.836.604 0 2.253-.997 3.762-.879 1.594.124 2.802.751 3.6 1.892-1.428.866-2.133 2.04-2.125 3.597zm-2.406-6.965c-.833.972-1.845 1.54-2.954 1.455-.094-1.17.344-2.21 1.088-3.05C9.781.696 10.967.06 11.991 0c.035.45.14 1.701-1.02 3.075z"></path></svg>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="http://localhost:3000">
+                                                    <a href="/">
                                                         <span>Baixar para Android</span>
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19"><path fill="#FF8040" fillRule="nonzero" d="M2.4 7.322v4.913c0 .653-.504 1.175-1.146 1.175C.617 13.41 0 12.884 0 12.235V7.322c0-.641.617-1.167 1.254-1.167.63 0 1.146.526 1.146 1.167zm.45 6.66v-7.61h10.304v7.61c0 .696-.55 1.256-1.225 1.256h-.842v2.593c0 1.56-2.312 1.557-2.312 0v-2.593h-1.55v2.593c0 1.552-2.3 1.565-2.3 0l-.012-2.593h-.83c-.683 0-1.233-.56-1.233-1.255zM13.183 5.96H2.804c0-1.816 1.067-3.394 2.65-4.218L4.658.245c-.116-.208.18-.34.28-.161l.808 1.51a5.537 5.537 0 0 1 4.512 0l.805-1.506c.104-.183.395-.047.279.161l-.796 1.493c1.57.824 2.637 2.402 2.637 4.218zM6.071 3.605a.442.442 0 0 0-.438-.445.436.436 0 0 0-.425.445.44.44 0 0 0 .425.446.442.442 0 0 0 .438-.446zm4.725 0a.44.44 0 0 0-.425-.445.441.441 0 0 0-.438.445c0 .242.192.446.438.446a.44.44 0 0 0 .425-.446zm3.95 2.55c.637 0 1.254.513 1.254 1.167v4.913c0 .649-.613 1.175-1.254 1.175-.63 0-1.146-.522-1.146-1.175V7.322c0-.654.517-1.167 1.146-1.167z"></path></svg>
                                                     </a>
@@ -83,11 +83,11 @@ export default function Header() {
                                                 <div>ES<span>ES</span></div>
                                             </div>
                                             <ul className="user-dropdown-content__list">
-                                                <li><a href="http://localhost:3000">Meu perfil</a></li>
-                                                <li><a href="http://localhost:3000">Criar assinatura</a></li>
-                                                <li><a href="http://localhost:3000">Produtos</a></li>
-                                                <li><a href="http://localhost:3000">Sobre o Sparkle</a></li>
-                                                <li><a href="http://localhost:3000">Sair</a></li>
+                                                <li><a href="/">Meu perfil</a></li>
+                                                <li><a href="/">Criar assinatura</a></li>
+                                                <li><a href="/">Produtos</a></li>
+                                                <li><a href="/">Sobre o Sparkle</a></li>
+                                                <li><a href="/">Sair</a></li>
                                             </ul>
                                         </div>
                                     </Dropdown.Body>

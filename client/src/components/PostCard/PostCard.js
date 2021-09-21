@@ -7,7 +7,7 @@ export default function PostCard(props) {
 
     return (
         <div className="post-card">
-            <a href="http://localhost:3000" className="post-card__image">
+            <a href="/" className="post-card__image">
                 <img loading="lazy" alt={description} src={image}/>
 
                 <div className="post-card__details">
@@ -17,7 +17,7 @@ export default function PostCard(props) {
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" preserveAspectRatio="xMinYMin meet"><g fill="none" fillRule="evenodd"><path fill="#FFF" d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16z"></path><path fill="#2D9DE7" d="M16 26.24c-1.706 0-2.07 2.108-3.412 1.71-1.341-.397-.519-2.37-1.954-3.3-1.435-.932-2.87.643-3.786-.423-.916-1.067.833-2.277.124-3.843-.708-1.566-2.76-1.025-2.959-2.422-.199-1.397 1.92-1.46 2.163-3.165.243-1.704-1.773-2.368-1.192-3.652.581-1.283 2.398-.18 3.515-1.482 1.118-1.301-.222-2.96.954-3.723 1.176-.763 2.114 1.157 3.75.671C14.842 6.126 14.603 4 16 4c1.398 0 1.16 2.126 2.796 2.611 1.637.486 2.575-1.434 3.751-.67 1.176.762-.164 2.42.954 3.722 1.117 1.301 2.934.199 3.515 1.482.58 1.284-1.435 1.948-1.192 3.652.242 1.704 2.362 1.768 2.163 3.165-.2 1.397-2.25.856-2.96 2.422-.708 1.566 1.04 2.776.125 3.843-.915 1.066-2.351-.509-3.786.422s-.613 2.904-1.954 3.301c-1.342.398-1.706-1.71-3.412-1.71z"></path><path fill="#FFF" d="M20.638 12.21c-.469-.34-1.143-.258-1.503.184l-.547.669-.841 1.028-3.265 3.991-1.577-1.83a1.12 1.12 0 0 0-1.507-.15.965.965 0 0 0-.16 1.416l2.432 2.824c.204.236.507.373.83.374h.017a1.09 1.09 0 0 0 .836-.394l3.669-4.485.948-1.158.864-1.059a.966.966 0 0 0-.196-1.41"></path></g></svg>
                         </div>
                     </div>
-                    <span href="http://localhost:3000" className="post-card__user-name">
+                    <span href="/" className="post-card__user-name">
                         @{user.user}
                     </span>
                     <div className="post-card__comments">
@@ -33,10 +33,10 @@ export default function PostCard(props) {
                     
                 </div>
             </a>
-            <a className="post-card__text" href="http://localhost:3000">
+            <a className="post-card__text" href="/">
                 {description}
             </a>
-            <a className="post-card__user-link" href="http://localhost:3000">
+            <a className="post-card__user-link" href="/">
                 em {user.name}
             </a>
         </div>
