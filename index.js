@@ -27,6 +27,18 @@ async function readJson(path){
     }
 };
 
+app.get("/", async (req, res) => {
+    
+    try{
+        
+        res.send("Aplicação rodando.");
+        res.end();
+
+    }catch(err){
+        res.send("Erro interno. ", err);
+    }
+});
+
 app.get("/users", async (req, res) => {
     
     try{
