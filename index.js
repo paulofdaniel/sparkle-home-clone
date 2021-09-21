@@ -18,6 +18,8 @@ app.use(function(req, res, next) {
     next();
 });
 
+
+
 async function readJson(path){
     try{
         let json = await JSON.parse(await fs.promises.readFile(path, () => {}));
@@ -27,17 +29,28 @@ async function readJson(path){
     }
 };
 
-app.get("/", async (req, res) => {
-    
-    try{
-        
-        res.send("Aplicação rodando.");
-        res.end();
 
-    }catch(err){
-        res.send("Erro interno. ", err);
-    }
-});
+const path = require('path');
+if (process.env.NODE_ENV === 'production') {
+    // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')));
+    // Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  });
+}
+
+//app.get("/", async (req, res) => {
+//    
+//    try{
+//        
+//        res.send("Aplicação rodando.");
+//        res.end();
+//
+//    }catch(err){
+//        res.send("Erro interno. ", err);
+//    }
+//});
 
 app.get("/users", async (req, res) => {
     
